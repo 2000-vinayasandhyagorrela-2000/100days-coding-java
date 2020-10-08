@@ -1,19 +1,17 @@
-package pattern;
-import java.util.*;
+package pattern2;
+
 public class Pattern5 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		char i;
-		char j;
-		for( i ='A'; i<='E';i++) 
+		int n =4;
+		
+		for(int i=1; i<=n; i++) 
 		{
-			for( j='A'; j<='E';j++) 
-			{
-				System.out.print(j); 
-			}
-			System.out.println();
+		 for(int j =n-1; j>= i; j--) 	
+			System.out.print(" "); 
+									
+		 for(int k=i-1; k >= -(i-1); k-- )  
+			System.out.print(i-Math.abs(k)); 		
+		System.out.println();		
 		}
-	}
-
+}
 }
